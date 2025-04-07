@@ -1,9 +1,10 @@
 #include <stdio.h>
 int main(){
-int movimentoTorre = 5, movimentoBispo = 5, movimentoRainha = 8;
+int movimentoTorre = 5, movimentoBispo = 5, movimentoRainha = 8, movimentoCavalo = 1;
 
     //variável de controle
     int i;
+  
 
     //Loop para movimentar a Torre 5 vezes para a Direita!
     printf("Movimentando a torre!\n\n");
@@ -27,5 +28,14 @@ int movimentoTorre = 5, movimentoBispo = 5, movimentoRainha = 8;
         printf("Esquerda\n");
         i++;
     }while(i <= movimentoRainha);
+    printf("\n\nMovimento Cavalo!\n\n");
+    
+
+    while(movimentoCavalo--){
+        for (i = 0 ; i < 2; i++){
+            printf("Cima!\n");
+        }
+        printf("Direita\n");
+    }
 
 }
